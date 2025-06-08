@@ -71,7 +71,12 @@ while run:
                 frame = 0
                 jumping=True
                 vel_y=jump_vel
-            
+
+            # Trigger dead animation with X key
+            if event.key == py.K_x:
+                action = 3
+                frame = 0
+
     if jumping:
         cent+=vel_y
         vel_y+=grav
